@@ -13,26 +13,45 @@ function Mostrar()
 
 	while(respuesta!="no")
 	{
-		numeroIngresado=prompt("Ingrese número");
+		numeroIngresado=prompt("Ingrese número" + contador);   //xq + contador?  xq sí en ej 7 y NO en ej 8
+		contador++;
 		numeroIngresado= parseInt(numeroIngresado);
+		acumulador=acumulador+parseInt(numeroIngresado);
 
-		if(contador==0)
-
+		if(numeroIngresado<0)
         {
-        	positivos= numeroIngresado;
-        	negativos= numeroIngresado;
+        	positivos= positivos+numeroIngresado;
+ 
         }
 
-        else(contador=0)
-        {
 
+        else
+        {
+        	negativos= negativos+numeroIngresado;
         }	
 
+     	else
+        {
+        	numeroIngresado= parseInt(numeroIngresado);         // !0  ó  ==0  ó *0
+		    acumulador=acumulador+parseInt(numeroIngresado);
+        }
 
-
+        
+		
 	}
+document.getElementById('suma').value=positivos;
+document.getElementById('suma').value=negativos;
+document.getElementById('suma').value=ceros;
+document.getElementById('suma').value=pares;
 
 
+
+document.getElementById('positivos').value=positivos;
+document.getElementById('negativos').value=negativos;
+document.getElementById('ceros').value=ceros;
+document.getElementById('pares').value=pares;
+document.getElementById('suma').value=acumulador;
+document.getElementById('promedio').value=acumulador/contador;
 
 
 }//FIN DE LA FUNCIÓN
