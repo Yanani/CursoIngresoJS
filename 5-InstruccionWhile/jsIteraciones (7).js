@@ -24,4 +24,5 @@ document.getElementById('promedio').value=acumulador/contador;
 
 }//FIN DE LA FUNCIÓN
 
-//Al presionar el botón pedir números hasta que el usuario quiera e informar la suma acumulada y el promedio.
+//Al presionar el botón pedir números hasta que el usuario quiera
+// e informar la suma acumulada y el promedio.
