@@ -13,19 +13,45 @@ Más de 10 intentos: “afortunado en el amor!!”.*/
 
 
 
+//console.log
+//switch(intentos){
+ //   case "6":        	
+ //   case "7":
+ //   case "8":        	    	 
+ //   case "9":
+ //   case "10":   	 
+        	// alert("Falta técnica”");
+        	// break;	
+//default
+             //alert("Afortunado en el amor!");
+             //break;
+function evaluar
 
-console.log
-switch(intentos){
-    case "6":        	
-    case "7":
-    case "8":        	    	 
-    case "9":
-    case "10":   	 
-        	 alert("Falta técnica”");
-        	 break;	
-default
-             alert("Afortunado en el amor!");
-             break;
+{
+	var intentos++;
+	var numeroIngresado;
+    
+     console.log
+
+
+     switch(intentos)
+
+     	case 1° intento: intento<1;
+     	break;
+
+     	{
+     		alert("usted es un Psíquico");
+     	}
+
+
+
+
+}
+
+
+
+
 }
 
 }
+
