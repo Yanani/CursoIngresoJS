@@ -1,17 +1,44 @@
 function Mostrar()
+
 {
 
-	var contador;
-	for(contador=0;  ;contador++)
+for (var contador=0;; contador++)
+  {
 
+	if (contador==4) 
     {
-    	if(contador==3)
-        {
-        	break;
-        }
-
-
-    alert(contador);
-
+ 		
+ 		break;
     }
-}//FIN DE LA FUNCIÓN
+
+  }
+ 
+
+    
+
+   document.write("bye)" +contador);   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*Enunciado:
+al presionar el botón repetir hasta que utilizamos 'BREAK'.*/
