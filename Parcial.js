@@ -362,6 +362,8 @@ for(contador=0;contador<3;contador++)
   var minimo;
   var pares;
   var respuesta;
+  var promedio;
+  promedio=0;
   maximo=0;
   minimo=0;
   suma=0;
@@ -410,6 +412,7 @@ for(contador=0;contador<3;contador++)
     {
       break;
     }
+    contador++;
   }//for
 
 document.write("<br> La cantidad de numeros pares es: " + pares);
@@ -419,8 +422,8 @@ document.write("<br> El numeros minimo es: " + minimo);
 document.write("<br> El numeros maximo es: " + maximo);
 
 
-}//fin*/
-
+}//fin
+*/
 // RECUPERATORIO
 //EJERCICIO 1
 
@@ -604,26 +607,61 @@ alert("La cantidad de varones mayores o igual al 20 es: " +varones);
 {
   var num;
   var suma;
+  var minimo;
+  var maximo;
+  var pares;
+  var respuesta;
+  pares=0;
+  suma=0;
+  minimo=0;
+  maximo=0;
 
 
   for(contador=0; ;contador++)
   {
     num=prompt("Ingrese número positivo");
     num=parseInt(num);
-    suma= suma + num;
-    suma=parseInt(suma);
+    
     while(num<0)
     {
       num=prompt("Re ingrese número");
       num=parseInt(num);
     }
-    
+    suma= suma + num;
+    suma=parseInt(suma);
 
-  }//for
+    if (contador==0)
+     {
+        minimo=num;
+        maximo=num;
+     }
 
+     else
+     {
+        if(minimo>num)
+        {
+          minimo=num;
+        }
+        else
+        {
+          maximo=num;
+        }
+     }//else
+     if(num%2==0)
+     {
+      pares++;
+     }
+     respuesta=prompt("Cuando quiera parar, escriba X");
+     if(respuesta=="X")
+     {
+      break;
+     }
 
-
-
-
-
+    }//for
+document.write("<br> La cantidad de números pares es:"  + pares);
+document.write("<br> El promedio de todos los números ingresados es: " + suma/contador);
+document.write("<br> La suma de todos los números es: " + suma);
+document.write("<br> El número mínimo  es: " + minimo);
+document.write("<br> El número maximo  es: " + maximo);
 }//fin
+
