@@ -352,22 +352,278 @@ for(contador=0;contador<3;contador++)
  document.write("<br>La nota más baja es:" +menor);
  document.write("<br>La cantidad de varones es: " +varones)
 
+}
+*/
+//EJERCICIO 8
+/*{
+  var num;
+  var suma;
+  var maximo;
+  var minimo;
+  var pares;
+  var respuesta;
+  maximo=0;
+  minimo=0;
+  suma=0;
+  pares=0;
+
+  for(contador=0;   ;contador++)
+  {
+    num=prompt("Ingrese numero");
+    num=parseInt(num);
+    suma=suma + num;
+    suma=parseInt(suma);
+
+    while(num<0)
+    {
+      num=prompt("Re ingrese numero");
+      num=parseInt(num);
+    }
+    
+
+    if(contador==0)
+    {
+      minimo=num;
+      maximo=num;
+    }
+    else
+    {
+      if(minimo>num)
+       {
+        minimo=num;
+       }
+     else
+     {
+      if(maximo<num)
+       {
+        maximo=num;
+       }
+     }
+      
+    }      
+    if(num%2==0)
+    {
+        pares++;
+    }
+    respuesta=prompt("Quiere salir? Escriba SI")
+    if(respuesta=="SI")
+    {
+      break;
+    }
+  }//for
+
+document.write("<br> La cantidad de numeros pares es: " + pares);
+document.write("<br> El Promedio de numeros ingresados es: " + suma/contador);
+document.write("<br> La suma de numeros  es: " + suma);
+document.write("<br> El numeros minimo es: " + minimo);
+document.write("<br> El numeros maximo es: " + maximo);
+
+
+}//fin*/
+
+// RECUPERATORIO
+//EJERCICIO 1
+
+/*{
+var CuadroUno;
+CuadroUno=document.getElementById('CuadroUno').value;
+var cuadrado;
+cuadrado= CuadroUno*4;
+alert("La superficie del cuadrado es: " + cuadrado);
+
+}//fin
+*/
+//EJERCICIO 2
+/*{
+ var importe;
+ importe=prompt("Ingrese importe del producto");
+ importe=parseInt(importe);
+ importeFinal= importe*0.75;
+ alert("importeFinal: " + importeFinal);
 }*/
+//EJERCICIO 3
+/*{
+  var CuadroUno;
+  var CuadroDos;
+  var CuadroTres;
+  var suma;
+  CuadroUno=document.getElementById('CuadroUno').value;
+  CuadroDos=document.getElementById('CuadroDos').value;
+  CuadroTres=document.getElementById('CuadroTres').value;
+  CuadroUno=parseInt(CuadroUno);
+  CuadroDos=parseInt(CuadroDos);
+  CuadroTres=parseInt(CuadroTres);
+  
+  suma=0;
+  suma=CuadroUno+CuadroDos+CuadroTres;
+  suma=parseInt(suma);
+
+  document.write("<br> La suma de los precios es: " + suma);
+  document.write("<br> El Promedio es: " + suma / 3) ;
+
+}//fin*/
+//EJERCICIO 4
+/*{
+  var num1;
+  var num2;
+  var suma;
+  num1=prompt("Ingrese el primer número");
+  num2=prompt("Ingrese el segundo número");
+  num1=parseInt(num1);
+  num2=parseInt(num2);
+  suma= num1 + num2;
+  suma=parseInt(suma);
+  
+  if(suma==0)
+  {
+    document.write("La suma es igual a cero "  );
+  }
+  else
+  {
+    if(suma<0)
+    {
+      document.write("La suma es negativa " );
+    }
+    else
+    {
+      document.write("La suma es positiva" );
+    }
+  }
+}//fin*/
+//EJERCICIO 5
+
+/*{
+  var mes;
+  mes=prompt("Ingrese el mes");
+
+  switch (mes)
+  {
+    case 'Diciembre':
+      alert("Se vienen las fiestas");
+      break;
+    case 'Enero':
+      alert("Comienza el año");
+      break;
+    default:
+      alert("No es enero ni diciembre");
+  }//switch
+}//fin*/
+
+//EJERCICIO 6
+
+/*{
+  var peso;
+  var pesado;
+  var liviano;
+
+ 
+  for(contador=0; contador<5; contador++)
+  {
+     peso=prompt("Ingrese el peso en kilos");
+     peso=parseInt(peso);
+
+     while(peso<0)
+     {
+      peso=prompt("Re ingrese el peso");
+      peso=parseInt(peso);
+     }
+
+     if(contador==0)
+     {
+        pesado=peso;
+        liviano=peso;
+     }
+     else
+     {
+        if (pesado<peso)
+         {
+            pesado=peso;
+         }
+         else
+          {
+              liviano=peso;
+          }
+     }//else
+  }//for
+  document.write("<br> El más pesado pesa: "  + pesado);
+  document.write("<br> El más liviano pesa: " + liviano);
+}//fin*/
+
+//EJERCICIO 7
+/*{
+  var edad;
+  var sexo;
+  var minima;
+  var varones;
+  var suma;
+  suma=0;
+  varones=0;
+  minima=0;
+
+  for(contador=0; contador<5; contador++)
+  {
+    edad=prompt("Ingrese su edad");
+    edad=parseInt(edad);
+
+    while(edad<0)
+    {
+      edad=prompt("Re ingrese edad");
+      edad=parseInt(edad);
+    }
+    suma= suma + edad;
+    suma=parseInt(suma);
+    sexo=prompt("Ingrese su sexo");
+    while(sexo!= "F" && sexo!= "M")
+    {
+      sexo=prompt("Re ingrese sexo"); 
+    }
+      if(contador==0)
+      {
+        minima=edad;
+      }
+      else
+      {
+        if(minima>edad)
+        {
+          minima=edad;
+        }
+        
+      }
+      if(sexo=="M" && edad>=20)
+      {
+        varones++;
+      }
+  }//for
+alert("El promedio de edad es: " +suma / contador);
+alert("La edad más baja es: " + minima);
+alert("La cantidad de varones mayores o igual al 20 es: " +varones);
+
+}//fin*/
+
+//EJERCICIO 8
+{
+  var num;
+  var suma;
+
+
+  for(contador=0; ;contador++)
+  {
+    num=prompt("Ingrese número positivo");
+    num=parseInt(num);
+    suma= suma + num;
+    suma=parseInt(suma);
+    while(num<0)
+    {
+      num=prompt("Re ingrese número");
+      num=parseInt(num);
+    }
+    
+
+  }//for
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+}//fin
